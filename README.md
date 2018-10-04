@@ -60,7 +60,7 @@ Antes de ejecutar los programas se debe conectar el telefono Android en modo de 
 ## Producto punto
 
 1- Abrir la terminal en la carpeta:
-  saxpy_par/
+  dot_product/
 
 2- Compilar con el siguiente comando: 
   ```console
