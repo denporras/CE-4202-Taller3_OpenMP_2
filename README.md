@@ -56,3 +56,29 @@ Antes de ejecutar los programas se debe conectar el telefono Android en modo de 
   usuario@Computer:~$ adb shell /data/local/tmp/saxpy_par
   
   ```
+
+## Producto punto
+
+1- Abrir la terminal en la carpeta:
+  saxpy_par/
+
+2- Compilar con el siguiente comando: 
+  ```console
+  usuario@Computer:~$ /opt/android-ndk-r16b/ndk-build
+
+  ```
+3- Entrar en la carpeta **jni**:
+  ```console
+  usuario@Computer:~$ cd jni/
+
+  ```
+4- Agregar el ejecutable al telefono:
+  ```console
+  usuario@Computer:~$ adb push ../libs/armeabi-v7a/dot_product /data/local/tmp
+
+  ```
+5- Ejecutar el programa:
+  ```console
+  usuario@Computer:~$ adb shell /data/local/tmp/dot_product
+  
+  ```
